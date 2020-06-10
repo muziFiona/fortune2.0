@@ -1,0 +1,12 @@
+# Blender MTL File: 'single_rune.blend'
+# Material Count: 1
+
+newmtl Runes-Mat1
+Ns 163.207806
+Ka 0.247191 0.247191 0.247191
+Kd 0.249559 0.146811 0.051584
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 3
