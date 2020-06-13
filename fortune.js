@@ -85,7 +85,7 @@ function setup() {
   runes[21]="INGWAZ \n \nFertility \nInternal Growth \nNew Life";
   runes[22]="DAGAZ \n \nDawn \nBreakthrough \nThe Power to \nChange the Self";
   runes[23]="OTHALA \n \nProperty \nPossessions \nAid in \nPhysical and Spiritual \nJourney";
-  runes[24]="Blank \n \nConsequences \nThe Unknown";
+  runes[24]="Wyrd \n \nConsequences \nThe Unknown \nface your fears";
 
 }
 
