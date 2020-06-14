@@ -10,7 +10,7 @@ function  answer(){
         rect(0, height/8, 600,400); 
         //another layer for image to fill in
         fill(0,0,0,0);
-        translate(0, -50, 0);
+        translate(0, -50, 10);
         tint(255, op);
         texture(rI);
         rect(30, height/8, 450,300);  
@@ -18,7 +18,7 @@ function  answer(){
         
         //switching on and off for the text output and also adding the fade in fade out effect
         if (on){
-        bg= 30; // background
+        //bg= 30; // background
         LETTERS();
         if (op < 200){
           op += 3;
@@ -49,7 +49,7 @@ function LETTERS(){
   textFont(myFont);
   textSize(32);
   textAlign(LEFT,TOP);
-  text(runes[index],-160,-100); //present random text by letting index be the eandom function when mouse pressed
+  text(runes[index],-200,-90); //present random text by letting index be the eandom function when mouse pressed
   textImg(); //related image function
 }
 
@@ -134,7 +134,7 @@ function boxT(){
     stroke(255);
     strokeWeight(5);
     fill(255,150);
-    box(size,230,size/3);
+    box(size,200,size);
     
     pop();
   }
