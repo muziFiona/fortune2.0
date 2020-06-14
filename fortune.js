@@ -100,18 +100,30 @@ function draw() {
   pop();
   if (mouseX >= width/2-100 && mouseX <= width/2+100 && mouseY >= height/2 && mouseY <= height){
     degree = 0;// when mouse is on the model, boxes stop spinning
-    size= 100;// spinning stop, and size of each box enlarge
-    bg = 30;//changing background --> grayscale
-    s= sin(frameCount/100);//changing the model scale when mouse is on position
+   // size= 100;// spinning stop, and size of each box enlarge
+   if(bg < 60){
+    for(i=0; i<60; i++){
+    bg+=sin(i);
+    size += cos(i);
+  }
+    }
+   // bg = 30;//changing background --> grayscale
     lo = 200; //opacity of the model
-    
+    s= sin(frameCount/100);//changing the model scale when mouse is on position
     answer(); // the pop up answer function, the opacity would only increse when mouse is pressed
      
     }
      
    else {
-    size = 30; // when mouse leave, boxes size change
-    bg= 0; //background change back to black after mouse leave
+    //size = 30; // when mouse leave, boxes size change
+   // bg= 0; //background change back to black after mouse leave
+   if(bg > 0){
+    for(i=0; i<60; i++){bg-=sin(i);}
+    
+    }
+    if(size >30){
+      size --;
+    }
     s=0.85; // stable scale for the 3D model
     lo = 255; //opacity becomes 255 of the model
  
