@@ -100,7 +100,7 @@ function draw() {
   if (opp > 0){
     fill(255,255,255,opp);
     textFont(myFont);
-    textSize(100);
+    textSize(width*0.05);//100
     textAlign(CENTER,CENTER);
     text("{fortune 2.0}", 0, -100);
     opp -= 3;
