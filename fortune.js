@@ -50,7 +50,7 @@ function preload(){
   runeM = loadModel('assests/single_rune.obj',true);
   img = loadImage('assests/bottom_BG.png');
   soundFormats('mp3','ogg');
-  mySound = loadSound('assests/background_s1');
+  mySound = loadSound('assests/background_s1.mp3');
   setVolume(0.1);
 }
 
