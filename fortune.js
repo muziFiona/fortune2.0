@@ -38,7 +38,7 @@ var s= 0.5; //scale of the 3D model
 let size = 50; //original size of the spinning boses
 var lo; // transparency of the 3D model in the middle
 let opp= 255;
-//let mySound;
+let mySound;
 
 
 function preload(){
@@ -49,14 +49,14 @@ function preload(){
   }
   runeM = loadModel('assests/single_rune.obj',true);
   img = loadImage('assests/bottom_BG.png');
-  //soundFormats('mp3','ogg');
-  //mySound = loadSound('assests/background_s1');
-  //setVolume(0.1);
+  soundFormats('mp3','ogg');
+  mySound = loadSound('assests/background_s1');
+  setVolume(0.1);
 }
 
 function setup() {
  createCanvas(windowWidth, windowHeight, WEBGL);// using WEBGL to draw 3D shape and have kind of camera movement
-// mySound.loop();
+ mySound.loop();
 /* the 25 spinning boxes position, representing number of runes*/
   for (var i=0; i<25; i++){
     x[i] = 800 * cos(14.5*radians(i));
