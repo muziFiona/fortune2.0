@@ -7,13 +7,13 @@ function  answer(){
         fill(255,255,255, op);
         rectMode(CENTER);
         translate(0, -100, 0);
-        rect(0, height/8, 600,400); 
+        rect(0, height/8, width*0.4,height*0.5); //600,400
         //another layer for image to fill in
         fill(0,0,0,0);
         translate(0, -50, 10);
         tint(255, op);
         texture(rI);
-        rect(30, height/8, 450,300);  
+        rect(30, height/8, width*0.3,height*0.4);  //450,300
         translate(0, height/8, 100);
         
         //switching on and off for the text output and also adding the fade in fade out effect
