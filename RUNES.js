@@ -47,7 +47,7 @@ function dotPt(){
 function LETTERS(){
   fill(10, 0, 0, op);
   textFont(myFont);
-  textSize(32);
+  textSize(height*0.04);//32
   textAlign(LEFT,TOP);
   text(runes[index],-200,-90); //present random text by letting index be the eandom function when mouse pressed
   textImg(); //related image function
