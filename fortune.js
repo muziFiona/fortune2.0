@@ -38,7 +38,7 @@ var s= 0.5; //scale of the 3D model
 let size = 50; //original size of the spinning boses
 var lo; // transparency of the 3D model in the middle
 let opp= 255;
-let mySound;
+//let mySound;
 
 
 function preload(){
