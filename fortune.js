@@ -37,6 +37,7 @@ let runeM; // gonna be the rune model to present in middle
 var s= 0.5; //scale of the 3D model
 let size = 50; //original size of the spinning boses
 var lo; // transparency of the 3D model in the middle
+let opp= 255;
 
 
 function preload(){
@@ -92,7 +93,15 @@ function setup() {
 
 function draw() {
   background(bg);
-
+  if (opp > 0){
+    fill(255,255,255,opp);
+    textFont(myFont);
+    textSize(100);
+    textAlign(CENTER,CENTER);
+    text("{fortune 2.0}", 0, -100);
+    opp -= 3;
+    
+   }
   dotPt();
   middleR();//3D model function in the middle
   push();
